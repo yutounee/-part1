@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+
+.img {
+    vertical-align: bottom;
+}
+
+.img-rounded, .img-circle, .img-thumb, .img-normal {
+    overflow: hidden;
+}
+
+.img-resp {
+    max-width: 100%;
+    height: auto;
+    /* 嚮應式影像 */
+}
+
+.img-rounded {
+    border-radius: 6px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-thumb {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 5px;
+}  
+
+.hover-ovl {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-ovl i, .hover-ovl::after {
+    /* display: none; */
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.hover-ovl:hover::after, .hover-ovl:hover i {
+    /* display: block; */
+    opacity: 1;
+}
+
+
+
+.hover-ovl i {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -35px;
+    margin-top: -38px;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.hover-ovl::after {
+    content: "";
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.hover-scale {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.hover-scale:hover > img {
+    transform: scale(1.3);
+}
+
+.hover-scale > img {
+    transition-duration: 1s;
+}
+
+
+
+
+
+
+
+
+/* font awesome icon 效果,當文字修改即可---------------------------- */
+.text-shadow {
+    text-shadow: 2 2 5px #000;
+    font-size: 40px;
+    color: aqua;
+}
+.color1 {
+    color: rgb(105, 72, 72);
+    font-size: 40px;
+}
+.color2 {
+    color: rgb(221, 27, 27);
+    font-size: 30px;
+}
+.color3 {
+    color: rgb(253, 176, 81);
+    font-size: 40px;
+}
+.color4 {
+    color: #ddd;
+    font-size: 40px;
+}

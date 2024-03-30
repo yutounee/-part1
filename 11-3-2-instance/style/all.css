@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	/* 用來重新定義寬高 */
+}
+
+.container {
+	max-width: 1200px;
+}
+
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text-align {
+	text-align: center;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+	background-color: #333;
+}
+
+.btn-inner {
+	position: relative;
+	top: 50vh;
+	margin-top: -150px;
+}
+
+
+/* 修改這裡 */
+
+.btn {
+	/* background-color: pink; */
+	width: 240px;
+	height: 240px;
+	/* 圓形寬高要等比,不然會變橢圓 */
+	display: inline-block;
+	/* 保持行內特性,但可調整寬高 */
+	border-radius: 50%;
+	text-decoration: none;
+	color: #fff;
+	padding-top: 75px;
+	font-size: 20px;
+	margin: 60px;
+	letter-spacing: 3px;
+	text-shadow: -1px -1px #acaaaa;
+	/* border: solid 20px #333; */
+	position: relative;
+}
+
+.btn span {
+	font-size: 17px;
+	letter-spacing: 1px;
+	text-shadow: none;
+	/* (針對英文修改 覆寫) */
+}
+
+.btn-danger {
+	background: radial-gradient(#e0c987, #d18742);
+	box-shadow: -5px -10px 20px rgba(0, 0, 0, .8) inset,
+	0 0 50px #d18742;
+}
+
+.btn-success {
+	background: radial-gradient(#f2fdf5, #9a9c9a);
+	box-shadow: -5px -10px 20px rgba(0, 0, 0, .8) inset,
+	0 0 50px #9a9c9a;
+}
+
+.btn-peace {
+	background: radial-gradient(#ccced1, #7f60b1);
+	box-shadow: -5px -10px 20px rgba(0, 0, 0, .8) inset,
+	0 0 50px #7f60b1;
+}
+
+
+
+.btn-danger:hover {
+	background: radial-gradient(#e0c987, #d18742);
+	box-shadow: -5px -10px 20px rgba(0, 0, 0, .8) inset,
+	0 0 50px #f1a863;
+	border: solid 30px #333;
+}
+
+.btn-success:hover {
+	background: radial-gradient(#f2fdf5, #9a9c9a);
+	box-shadow: -5px -10px 20px rgba(0, 0, 0, .8) inset,
+	0 0 50px #c5c5c5;
+	border: solid 20px #333;
+}
+
+.btn-peace:hover {
+	background: radial-gradient(#ccced1, #7f60b1);
+	box-shadow: -5px -10px 20px rgba(0, 0, 0, .8) inset,
+	0 0 50px #ae8be7;
+	border: solid 20px #333;
+}
+
+.btn::before, .btn::after {
+	content: "";
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+	/* z-index: 1; */
+	opacity: .05;
+}
+
+.btn::before {
+	left: 17%;
+	top: 7%;
+	width: 51%;
+	height: 40%;
+}
+
+.btn::after {
+	left: 10%;
+	bottom: 0%;
+	width: 81%;
+	height: 70%;
+}

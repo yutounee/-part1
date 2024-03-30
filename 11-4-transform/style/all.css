@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.img-chopper {
+    /* transform: scale(2); */
+    /* transform: scale(3); */
+    /* transform: scaleX(2); */
+    /* transform: scaleY(2); */
+    /* transform: rotate(20deg); */
+    /* transform: rotateX(60deg); */
+    /* transform: rotateY(60deg); */
+    /* transform: rotateZ(20deg); */
+    /* transform: rotateX(60deg) rotateY(50deg) rotateZ(40deg); */
+    /* transform: skewX(-30deg); */
+    /* transform: skewY(-30deg); */
+    /* transform: skew(-30deg, -50deg); */
+    /* transform: translateX(200px); */
+    /* transform: translateY(200PX); */
+    /* transform: translate(200PX, 200PX); */
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.box1, .box2, .box3 {
+			width: 700px;
+			height: 100px;
+			/* background-color: pink; */
+			margin-bottom: 15px;
+		}
+
+		.box1 {
+			background-image: linear-gradient(45deg, rgb(235, 229, 149), rgb(153, 0, 255), rgb(178, 178, 233), orange);
+		}
+		.box2 {
+			background-image: radial-gradient(rgb(163, 163, 224) 10%, rgb(42, 53, 209), #200257 80%);
+		}
+		.box3 {
+			/* Permalink - use to edit and share this gradient. 固定鏈接 - 用於編輯和分享此漸變： https://colorzilla.com/gradient-editor/#febbbb+0,fe9090+45,ff5c5c+100;Red+3D+%231 */
+			background: linear-gradient(to bottom,  #febbbb 0%,#fe9090 45%,#ff5c5c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		}
+		
+		/* 漸層色要用背景影像來寫background image
+		linear-gradient 線性漸層
+		radial-gradient 放射狀漸層
+
+		顏色前面加上to right ，排列方式會變成水平往右側
+		有to right 、left、bottom、top 四個方位
+
+		如果要角度的漸層，加上45deg，就會變成斜45度角的漸層
+
+		也可以設定顏色範圍
+		左側是0，右側是100
+
+		例如在紅色後面加上50%
+		代表紅色部分的範圍 */
+		
+	</style>
+</head>
+
+<body>
+	<div class="box1"></div>
+
+	<div class="box2"></div>
+
+	<div class="box3"></div>
+
+</body>
+
+</html>

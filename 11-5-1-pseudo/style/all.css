@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.dom-ls {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.dom-item {
+	margin: 10px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border: solid 1px #ccc;
+	border-radius: 50%;
+}
+
+.dom-item:first-child {/* 第一個數 */
+	background-color: rgb(243, 144, 161);
+	color: #fff;
+}
+
+.dom-item:last-child {/* 最後一個數 */
+	background-color: rgb(230, 180, 115);
+	color: #fff;
+}
+
+.dom-item:nth-child(odd){/* 基數 */
+	background-color: rgb(158, 232, 238);
+	color: #fff;
+}
+
+.dom-item:nth-child(even){/* 偶數 */
+	background-color: rgb(249, 253, 186);
+	color: #000000;
+}
+
+.dom-item:nth-child(4n){/* 選擇4的倍數 */
+	background-color: rgb(121, 74, 133);
+	color: #ffffff;
+}
+
+.dom-item:nth-child(4n + 23){/* 從23開始 往後4的倍數 */
+	background-color: rgb(229, 140, 67);
+	color: #ffffff;
+}
+
+.dom-item:nth-last-child(9){/* 倒數第幾個 */
+	background-color: rgb(75, 51, 171);
+	color: #ffffff;
+}

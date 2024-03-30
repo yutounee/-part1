@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+html, body, div, h1, table, tr, td {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url("../images/bg.jpg") repeat-x;
+	font-family: Arial, Helvetica, sans-serif, '微軟正黑體';
+	font-size: 15px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.tit {
+	color: #FFF;
+	text-align: center;
+	margin: 1em 0;
+}
+
+.wrap {
+	width: 660px;
+	margin: auto;
+	padding: 40px;
+	background: url("../images/wrap_bg.png") no-repeat;
+}
+
+
+/* 修改這裡 */
+
+
+.tb {
+	border-collapse: collapse;
+	/* 清除表格之間的空間 */
+	width: 100%;
+}
+
+.tb td {
+	/* 用後代選取器控制範圍 */
+	border: solid 1px #999;
+	padding: 6px 10px;
+}
+
+.tb tr {
+	border-color: #ffffff;
+	/* transition-duration: .25s;(滑鼠滑入滑出保有完整性) */
+}
+
+.tb tr:nth-child(even) {
+	background-color: #72afb642;
+}
+
+.tb tr:hover {
+	background-color: antiquewhite;
+	transition-duration: .25s; /* (只有滑入有效果，滑出沒有) */
+}
+
