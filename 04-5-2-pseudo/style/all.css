@@ -1,0 +1,55 @@
+body {
+	font-family: Arial, "微軟正黑體";
+	font-size: 15px;
+	background-color: #e6e6e6;
+}
+
+a {
+display: block;
+width: 500px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 5px;
+text-align: center;
+text-decoration: none; /*文字裝飾*/
+padding: 1rem;
+}
+
+a:link {
+	/* 超連結預設顏色 */
+	color: rgb(255, 255, 255);
+	background-color:rgb(116, 73, 156);
+	
+	/* display: block;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none; 文字裝飾
+	padding: 1rem;
+	進階寫法，共用的可以搬到上方a的刮弧裡獨立出來 */
+}
+
+a:visited {
+	/* 有點閱過的 */
+	color: rgb(63, 7, 91);
+	background-color: rgb(153, 157, 216);
+}
+
+a:hover {
+	/* 滑鼠滑入 */
+	color: black;
+	background-color: #3d496a;
+}
+
+a:active {
+	/* 按下不放 */
+	color: #656060
+}
+
+
+/* 普通標題文字，預設為區塊特性(block)
+超連結，a元素預設狀態為行內(inline)，無法改變寬高
+想要修改背景色寬高度，可以設定
+display: block (將行內狀態轉換成區塊特性) */

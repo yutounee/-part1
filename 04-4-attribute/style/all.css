@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #eee;
+}
+
+.img-inner {
+	display: flex;
+	justify-content: center;
+}
+
+.img-resp {
+	width: 25%;
+	height: auto;
+	/* 上面兩個是響應式設定 */
+	border: solid 1px red;
+	padding: 10px;
+	background-color: #fff;
+	margin: 10px;
+}
+
+.img-resp[alt] {
+	/* (挑出有alt的，屬性選取器) */
+	border-color: black;
+}

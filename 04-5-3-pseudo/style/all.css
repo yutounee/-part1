@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #eee;
+}
+
+.img__inner {
+	display: flex;
+	justify-content: center;
+}
+
+.img-resp {
+	width: 25%;
+	height: auto;
+	margin: 10px;
+	/* background-color: #fff;
+	padding: 10px; */
+	border: solid 10px #fff;
+}
+
+.img-resp:hover {
+	/* background-color: pink; */
+	border-color: pink;
+}

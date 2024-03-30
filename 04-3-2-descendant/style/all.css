@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body, button, input {
+	font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+	font-size: 16px;
+}
+
+.wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.login {
+	width: 25%;
+	margin: 15px;
+	background-color: #eee;
+	border: solid 1px #ddd;
+}
+
+.login__body {
+	margin-bottom: 30px;
+}
+
+.login__row {
+	margin: 15px;
+}
+
+.login__label {
+	display: block;
+	margin-bottom: 5px;
+	color: #999;
+}
+
+.login__iptText {
+	display: block;
+	padding: 7px 10px;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+}
+
+.login .btn {
+	width: 100%;
+	font-size: 18px;
+}
+
+.btn {
+	border: none;
+}
+
+.btn-primary {
+	padding: 7px 10px;
+	background-color: #0288d1;
+	color: #fff;
+	border-radius: 3px;
+}
+
+/*
+	紅色: #d32f2f
+	橙色: #ef9100
+	綠色: #689f38
+*/
+
+
+/* 第一種寫法：
+
+.alert1 {
+	border: solid 1px #e88383;
+	background-color: #fce9e9;
+	padding: 12px 10px;
+	margin: 15px;
+}
+
+.alert1 p {
+	color: #d32f2f;
+	margin: 0;
+	font-size: 15px;
+}
+
+.alert2 {
+	border: solid 1px #c98319;
+	background-color: #f5e9d7;
+	padding: 12px 10px;
+	margin: 15px;
+}
+
+.alert2 p {
+	color: #ef9100;
+	margin: 0;
+	font-size: 15px;
+}
+
+.alert3 {
+	border: solid 1px #669040;
+	background-color: #dcedcf;
+	padding: 12px 10px;
+	margin: 15px;
+}
+
+.alert3 p {
+	color: #689f38;
+	margin: 0;
+	font-size: 15px;
+} */
+
+
+
+/* 第二種寫法（相同的部分，整理擺放到群組化的地方，不一樣的就留在各自的程式碼） */
+/* 
+.alert1, .alert2, .alert3 {
+	padding: 12px 10px;
+	margin: 15px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.alert1 p, .alert2 p, .alert3 p {
+	margin: 0
+}
+
+.alert1 {
+	border-color: #e88383;
+	background-color: #fce9e9;
+}	
+
+.alert1 p {
+	color: #d32f2f;
+}
+
+.alert2 {
+	border-color: #c98319;
+	background-color: #f5e9d7;
+}
+
+.alert2 p {
+	color: #ef9100;
+}
+
+.alert3 {
+	border-color: #669040;
+	background-color: #dcedcf;
+}
+
+.alert3 p {
+	color: #689f38;
+} */
+
+
+/* 第三種寫法 */
+
+.alert {
+	padding: 12px 10px;
+	margin: 15px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.alert p {
+	margin: 0
+}
+
+.alert-danger {
+	border-color: #e88383;
+	background-color: #fce9e9;
+}	
+
+.alert-danger p {
+	color: #d32f2f;
+}
+
+.alert-warning {
+	border-color: #c98319;
+	background-color: #f5e9d7;
+}
+
+.alert-warning p {
+	color: #ef9100;
+}
+
+.alert-success {
+	border-color: #669040;
+	background-color: #dcedcf;
+}
+
+.alert-success p {
+	color: #689f38;
+}
