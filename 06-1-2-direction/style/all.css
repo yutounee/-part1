@@ -1,0 +1,21 @@
+@charset "utf-8";
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.box {
+	display: flex;
+	/* flex-direction: row-reverse; */
+	/* flex-direction: row;  */
+	/* flex-direction: column; */
+}
+
+.box-item {
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	border: solid 1px #ccc;
+	width: 100%;
+}

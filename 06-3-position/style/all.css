@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* 修改這裡 */
+
+.header {
+    background-image: url(../images/menu_bg.png);
+    width: 800px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title, .navi {
+    margin: 0;
+}
+
+.title a {
+    /* background-color: pink; */
+    width: 150px;
+    height: 80px;
+    display: block;
+    text-indent: -9999px;
+}
+
+.navi {
+    /* background-color: pink; */
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    margin-right: 150px;
+}
+
+.navi li {
+    margin-left: 10px;
+    /* background-color: yellowgreen; */
+}
+
+.navi a {
+    background-image: url(../images/menu_link.png);
+    width: 100px;
+    height: 70px;
+    display: block;
+    text-indent: -9999px;
+}
+
+/* 第一顆按鈕已經定位，所以不需要做，從第二顆開始做 */
+.pos2 {
+    background-position-x: -100px;
+}
+
+.pos3 {
+    background-position-x: -200px;
+}
+
+.pos4 {
+    background-position-x: -300px;
+}
+
+.navi a:hover {
+    background-position-y: -70px;
+}
+
+/* 上面是合併寫法
+.pos1:hover {background-position-y: -70px;}
+.pos2:hover {background-position-y: -70px;}
+.pos3:hover {background-position-y: -70px;}
+.pos4:hover {background-position-y: -70px;} */

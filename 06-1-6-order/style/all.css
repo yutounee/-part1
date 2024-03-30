@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.box {
+	display: flex;
+}
+
+.box-item {
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	border: solid 1px #ccc;
+}
+
+.box-item-1 {
+	height: 100px;
+	font-size: 40px;
+}
+
+.box-item-2 {
+	height: 200px;
+	font-size: 70px;
+	/* 修改這裡 */
+	order: -2;
+}
+
+.box-item-3 {
+	height: 300px;
+}
+
+.box-item-4 {
+	font-size: 50px;
+	/* 修改這裡 */
+	order: -1;
+}

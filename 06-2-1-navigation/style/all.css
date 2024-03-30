@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+body {
+	font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+}
+
+.article {
+	padding: 10px;
+	width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.article p {
+	line-height: 1.7;
+}
+
+/* 修改這裡 */
+
+.navi {
+	background-color: rgb(255, 248, 236);
+	list-style-type: none;
+	padding-left: 0;
+	display: flex;
+	
+	/* 寫法一：（一個按鈕＋li是220px，220*5=1100） */
+	/* width: 1100px;
+	margin-left: auto;
+	margin-right: auto; */
+
+	/* 寫法二，一行程式碼搞定 */
+	justify-content: center;
+}
+
+.navi li {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.navi a {
+	text-decoration: none;
+	background-color: rgb(160, 166, 242);
+	width: 200px;
+	display: block;
+	/* a超連結預設是行內特性，無法控制寬高，需加上 display:block，轉換成區塊 */
+	text-align: center;
+
+	line-height: 40px;
+	/* 方法一：
+	height: 32px;
+	padding-top: 8px;
+	滿足相加剛好等於設定的高度40
+
+	方法二：
+	height: 40px;
+	padding-top: 8px;
+	box-sizing: border-box;
+
+	方法三：
+	line-height: 40px; （行距 上下平均分開來）(限制是按鈕不能有兩行文字） */
+
+	border-radius: 3px;
+	color: #1c0766;
+}
+
+.navi a:hover {
+	background-color:  rgb(45, 52, 150);
+	color: #fff;
+}
+/* 修改這裡 */
+/* 巢狀寫法sass（後代往上般） */

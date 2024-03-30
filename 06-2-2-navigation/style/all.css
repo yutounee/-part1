@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+body {
+	font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+}
+
+.article {
+	padding: 10px;
+	width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.article p {
+	line-height: 1.7;
+}
+
+.navi {
+	background-color: rgb(255, 248, 236);
+	list-style-type: none;
+	padding-left: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.navi li {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.navi a {
+	text-decoration: none;
+	/* background-color: rgb(160, 166, 242); */
+	width: 200px;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 10px;
+	color: #000000;
+
+	border-bottom: solid 2px #ccc;
+}
+
+.navi a:hover {
+	background-color: #fff;
+	border-color: rgb(45, 52, 150);
+}
