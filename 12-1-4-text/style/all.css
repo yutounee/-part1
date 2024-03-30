@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+}
+
+.container {
+	max-width: 900px;
+}
+
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.article p {
+	line-height: 1.5;
+}
+
+.navi {
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: olive;
+	border-radius: 5px;
+
+	/* 作用是把下排的英文隱藏起來 */
+	height: 40px;
+	overflow: hidden;
+}
+
+.navi-ls {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+.navi-item a {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	/* background-color: pink; */
+	display: block;
+	transition-duration: .3s;
+}
+
+.navi-item a::after {
+	content: attr(title);
+	display: block;
+	margin-top: 15px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.navi-item:hover a {
+	transform: translateY(-33px);
+}

@@ -1,0 +1,88 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+.container {
+	max-width: 980px;
+}
+
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img-resp {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	font: 15px/1 Arial, '微軟正黑體', '細明體';
+}
+
+.header,
+.navi,
+.content,
+.footer {
+	padding: 15px;
+}
+
+.header {
+	height: 100px;
+	background-color: #eee;
+}
+
+.navi {
+	background-color: #ddd;
+}
+
+.content {
+	background-color: #eee;
+}
+
+.footer {
+	height: 70px;
+	background-color: #ddd;
+}
+
+.desc {
+	line-height: 1.5;
+}
+
+.adv {
+	position: relative;
+	/* 讓小圖定位在父層，小圖的高度就會消失，載入畫面由大圖撐著 */
+	overflow: hidden; /* 隱藏大圖出先的手指 */
+	min-height: 100px; /* 撐出小圖的高度 */
+}
+
+.img-small {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.img-large {
+	position: relative;
+	/* relative讓index有效用，大圖把小圖蓋住 */
+	z-index: 2;
+	animation-name: slide;
+	animation-duration: 3s;
+	animation-fill-mode: forwards; /* 停在最終的效果，不要回到初始 */
+}
+
+@keyframes slide {
+	from {
+		opacity: 1;
+		margin-top: 0;
+	}
+
+	to {
+		opacity: 0;
+		margin-top: -500px;
+	}
+}

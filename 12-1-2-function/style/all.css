@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+.box {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 1px #ccc;
+}
+
+.box-item {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 100px;
+	height: 50px;
+	font-size: 18px;
+	font-family: sans-serif;
+	background-color: yellowgreen;
+	transition: width 2s;
+}
+
+.box:hover .box-item {
+	width: 1000px;
+}
+
+.box-item1 {
+	transition-timing-function: linear;
+}
+
+.box-item2 {
+	transition-timing-function: ease;
+}
+
+.box-item3 {
+	transition-timing-function: ease-in;
+}
+
+.box-item4 {
+	transition-timing-function: ease-out;
+}
+
+.box-item5 {
+	transition-timing-function: ease-in-out;
+}
+
+.box-item6 {
+	transition-timing-function: step-start;
+}
+
+.box-item7 {
+	transition-timing-function: step-end;
+}
+
+.box-item8 {
+	transition-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
