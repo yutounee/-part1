@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.box {
+    background-color: pink;
+    width: 500px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box::before {
+    content: "前面文字";
+    background-color: aquamarine;
+    /* width: 5111px; */
+    /* 他是行內特性,想要平行且區塊特性用inline-block*/
+    display: inline-block;
+    height: 100px;
+}
+
+.box::after {
+    content: "後面文字";
+    background-color: blueviolet;
+    display: block;
+}
