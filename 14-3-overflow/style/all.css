@@ -1,0 +1,22 @@
+@charset "utf-8";
+.box {
+	width: 500px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	background-color: yellowgreen;
+
+	/* overflow: visible; */
+	/* overflow: hidden; */
+	/* overflow: scroll; */
+	overflow: auto;
+}
+
+.box-desc {
+	line-height: 1.5;
+}
+
+.box-desc + .box-desc {
+	margin-top: 15px;
+}

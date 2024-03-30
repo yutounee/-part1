@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+li { /* 第9順位 */
+    color: bisque;
+}
+
+ul { /* 第10順位 */
+    color: aqua;
+}
+
+ul li { /* 第8順位 */
+    color: blueviolet;
+}
+
+.text { /* 第7順位 */
+    color: red;
+}
+
+ul .text { /* 第6順位 */
+    color: orange;
+}
+
+li.text { /* 第5順位 */
+    color: yellow;
+}
+
+.list li { /* 第4順位 */
+    color: chartreuse;
+}
+
+.list .text { /* 第3順位 */
+    color: green;
+}
+
+.list li.text { /* 第2順位 */
+    color: blue;
+}
+
+ul.list li.text { /* 第1順位 */
+    color: black;
+}
+
+.list[class] .text { /* 第0順位 */
+    color: purple;
+}
