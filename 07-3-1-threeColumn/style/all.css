@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 1030px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: pink;
+}
+
+.header {
+	background-color: aquamarine;
+}
+
+/* 增加一個container */
+.container {
+	display: flex;
+}
+
+.navi {
+	width: 20%;
+	background-color: blanchedalmond;
+}
+
+.main {
+	width: 60%;
+	background-color: coral;
+}
+
+.sidebar {
+	width: 20%;
+	background-color: darkgray;
+}
+
+.footer {
+	background-color: darkkhaki;
+}
