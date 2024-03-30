@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* Base ------------------------- */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+	font-size: 15px;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+/* Helper ----------------------------- */
+
+.img-resp {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 1200px;
+}
+
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* 模組區塊 */
+
+.pic-ls {
+	list-style-type: none;
+	/* background-color: pink; */
+	padding-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.pic-item {
+	width: 25%;
+	padding: 15px;
+}
+
+.pic-item a {
+	text-decoration: none;
+	display: block;
+	border: solid 1px #ccc;
+	position: relative;
+	height: 100%;
+}
+
+.pic-title,
+.pic-desc {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.pic-intro {
+	margin: 15px;
+}
+
+.pic-title {
+	font-size: 1.2rem;
+	color: orange;
+
+	/* 省略文字的小技巧 */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.pic-desc {
+	font-size: 0.9rem;
+	color: #666;
+	line-height: 1.5; /* (文字下方會多出空間,那是行距,要把它清除) */
+}
+
+.pic-tag {
+	position: absolute;
+	top: -10px ;
+	left: -10px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 5px 10px;
+	line-height: 1;
+	color: #fff;
+	font-size: 12px;
+	background-color: orange;
+	border-radius: 3px 3px 3px 0;
+}
+
+.pic-tag::before {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: -10px;
+	border: solid 10px transparent;
+	border-right-color: rgb(185, 121, 2);
+	z-index: -1; /*   (圖層關係,順序移到長方形下方) */
+}
+
+.pic-item-spec .pic-tag {
+	background-color: red;
+}
+
+.pic-item-spec .pic-tag::before {
+	border-right-color: rgb(180, 1, 1)
+}
+
+.row {
+	/* 補上15像素成1200 */
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+
+/* 三角形製作補充:
+https://jsbin.com/dalawetaya/1/edit?html,css,output */

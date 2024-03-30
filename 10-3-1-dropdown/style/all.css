@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1050px;
+}
+
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+	font-size: 15px;
+	font-family: Arial, "微軟正黑體";
+	background-color: #f6f6f6;
+}
+
+.content {
+	background-color: #eee;
+	border: solid 1px transparent;
+}
+
+.content p {
+	margin: 15px;
+	line-height: 1.5em;
+}
+
+/* 修改這裡 */
+
+.navi-ls {
+	display: flex;
+}
+
+.navi-item ul {
+	display: none;
+	position: absolute;
+}
+.navi-item a {
+	display: block;
+	width: 150px;
+	color: #fff;
+	background-color: rgb(120, 92, 136);
+	text-decoration: none;
+	padding: 10px;
+}
+.navi-item >a {
+	text-align: center;
+}
+
+.navi-item a:hover {
+	background-color: rgb(174, 136, 196);
+}
+
+.navi-item:hover ul {
+	display: block;
+}
