@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+}
+
+.navi {
+	background-color: rgb(255, 255, 255);
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 0 0 10px 10px;
+	overflow: hidden;
+}
+
+.navi h2 {
+	background-color: blueviolet;
+	margin: 0;
+	background-image: url(../images/logo.jpg);
+	width: 280px;
+	height: 65px;
+	/* color: rgba(0, 0, 0, 0); */
+	/* font-size: 0; */
+	text-indent: -9999px; /*首航縮排*/
+}

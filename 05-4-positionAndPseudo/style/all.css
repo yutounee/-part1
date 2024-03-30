@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #e6e6e6;
+	font-family: Arial, "微軟正黑體";
+	font-size: 15px;
+}
+
+a {
+	background-image: url(../images/bg.png);
+	width: 530px;
+
+	/* 第一種解法 */
+	/* height: 35px; (50-15=35)
+	padding-top: 15px; */
+
+	/* 第二種解法 */
+	/* height: 50px;
+	padding-top: 15px;
+	box-sizing: border-box; */
+	
+	/* 第三種解法 */
+	line-height: 50px;
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	text-align: center;
+	text-decoration: none;
+	
+}
+
+a:link {
+	color: #060;
+}
+
+a:visited {
+	color: #000;
+	background-position-y: -50;
+}
+
+a:hover {
+	background-position-y: -100px;
+	color: #fff;
+}
+
+a:active {
+	background-position-y: -150px;
+}

@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.list {
+    /* background-color: pink; */
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.list li {
+    width: 60px;
+    height: 40px;
+    background-color: bisque;
+    margin-bottom: 20px;
+    background-image: url(../images/flag.png);
+    background-position-x: 0;
+    /* background-position-y: -80px; */
+    text-indent: -9999px;
+}
+
+.fr {
+    background-position-y: -40px;
+}
+
+.jp {
+    background-position-y: -80px;
+}
+
+.kr {
+    background-position-y: -120px;
+}
+
+.tw {
+    background-position-y: -160px;
+}
+
+.us {
+    background-position-y: -200px;
+}
+
+.cn {
+    background-position-y: -240px;
+}
+
+.uk {
+    background-position-y: -280px;
+}
