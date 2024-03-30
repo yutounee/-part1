@@ -1,0 +1,111 @@
+@charset "utf_8";
+
+html {
+    /* font-size: 20px; */
+}
+
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, “微軟正黑體”, sans-serif;
+    background-image: url("../images/bg.png");
+    /*
+    ../資料夾往外面跳一層
+    */
+    background-repeat: no-repeat;
+    /* 背景不要重複 */
+    background-position: right bottom; /*先寫水平再寫垂直*/
+    background-attachment: fixed; /*固定位置功能*/
+}
+
+/*h1, h2, h3, p 
+{
+    font-family: Arial, Helvetica, “微軟正黑體”, sans-serif;
+    群組化寫法
+    也可以直接寫在body裡，全部都一起套用
+}*/
+
+h1, h2, h3 {
+    text-align: center; /*文字置中*/
+}
+
+h1 {
+    background-color: brown;
+    color: blueviolet;
+    font-size: 3rem;
+    font-weight: 100;
+    /*font-family: Arial, Helvetica, “微軟正黑體”, sans-serif;
+    可以單獨放，也可以用群組化方式，也可以直接寫在body裡*/
+    font-size: italic;
+    /*控制斜體字*/
+}
+
+    /*
+    英文大小寫轉換說明
+    text-transform: uppercase;  英文轉大寫
+    text-transform: lowercase; 英文轉小寫
+    text-transform: capitalize;  英文首字母大寫
+    */
+
+
+h2 {
+    color: burlywood;
+    font-size: 20px; 
+}
+
+h3 {
+    color: blue;
+    font-size: 18px;
+}
+
+h4 {
+    color: rgb(99, 132, 31);
+}
+
+small {
+    /* 用來單獨處理英文字體，用small區隔 */
+    color: gray;
+    margin-left: 1rem;
+    /* or 使用 padding-left: 1rem 都可以隔出距離 (padding背景會有包含顏色) ; */
+    text-transform: uppercase; /*變成大寫*/
+    font-weight: 100;/* 英文變成不是粗體字 */
+    /* font-style: italic; 變成斜體字 */
+}
+
+p {
+    color: cadetblue;
+    /*line-height: 25px;*/
+    letter-spacing: 9px;
+    text-indent: 32px;
+    /*文章首行縮排*/
+    text-align: justify; /*文字齊行*/
+}
+
+div {
+background-color: rgba(255, 255, 255, 0.5);
+width: 900px;
+margin-left: auto;
+margin-right: auto;
+padding: 30px;
+}
+
+img {
+    width: 46%;
+    height: auto;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: circle;    /*更換清單外觀形狀*/
+    /* border-style: solid;    
+    border-width: 1px;
+    border-color: bisque;   邊框設定*/
+    /* border-radius: 20px;    邊框圓角 */
+    border: solid 1px #cccccc;  /*也可以直接寫成一行*/
+    padding-top: 1rem;   /*邊框上下留白設定*/
+    padding-bottom: 1rem;
+}
+
+li {
+    line-height: 1.7rem;
+}
